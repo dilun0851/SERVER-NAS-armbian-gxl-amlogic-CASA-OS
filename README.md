@@ -55,7 +55,7 @@ SERVER NAS armbian gxl amlogic ( CASA OS ) adalah server nas menggunakan hardwar
 
     Tenda N301: IP defaults: 192.168.0.1 > Bandwidth Control > Attached Devices
 
-    Mikrotik: Neighbors > "Klik IP Address 192.168.*.*" > Connect > IP > DHCP   
+    Mikrotik: Neighbors > "Klik IP Address 192.168._._/10._._._" > Connect > IP > DHCP   
               Server > Leases
 
     TL-WR844N: IP defaults: 192.168.0.1/192.168.1.1 > Local Password defaults: 
@@ -67,7 +67,7 @@ SERVER NAS armbian gxl amlogic ( CASA OS ) adalah server nas menggunakan hardwar
 19. Buka putty windows/mac os
 
 20. Masukan IP Address router ke putty di bagian Host Name (or IP address):    
-    *.*.*.* dan Port: 22 lalu Open
+    192.168._._/10._._._ dan Port: 22 lalu Open
 
 21. Masukan login defaults as: root dan password: 1234
 
@@ -111,24 +111,24 @@ SERVER NAS armbian gxl amlogic ( CASA OS ) adalah server nas menggunakan hardwar
 6. BUKA PUTTY WINDOWS/MAC OS
 
 7. Masukan IP Address router ke putty di bagian Host Name (or IP address):    
-    *.*.*.* dan Port: 22 lalu Open
+    192.168._._/10._._._ dan Port: 22 lalu Open
 
-8. Masukan login as: root dan password: "BARU KALIAN GANTI BARU"
+9. Masukan login as: root dan password: "BARU KALIAN GANTI BARU"
 
-9. ketik "curl -s https://install.zerotier.com | bash"
+10. ketik "curl -s https://install.zerotier.com | bash"
 
-10. ketik "systemctl enable zerotier-one.service"
+11. ketik "systemctl enable zerotier-one.service"
 
-11. ketik "zerotier-cli join "network_id""
+12. ketik "zerotier-cli join "network_id""
 
-12. INSTALL ZEROTIER DI HANDPHONE ANDROID
+13. INSTALL ZEROTIER DI HANDPHONE ANDROID
 
-13. ADD NETWORK LALU MASUKAN NETWORK ID TADI YANG SUDAH DI BUAT DI BROWSER
+14. ADD NETWORK LALU MASUKAN NETWORK ID TADI YANG SUDAH DI BUAT DI BROWSER
 
-14. CENTANG HIJAU ROUTE ALL TRAFFIC LALU ADD
+15. CENTANG HIJAU ROUTE ALL TRAFFIC LALU ADD
 
-15. IZINKAN AKSES NETWORK ID DI BROWSER URL: 
+16. IZINKAN AKSES NETWORK ID DI BROWSER URL: 
     https://my.zerotier.com/network/"NETWORK_ID"
 
-16. BAGIAN MEMBERS > SWITCH TO BETA LIST > AUTH? CENTANG HIJAU SEMUA LALU DI 
+17. BAGIAN MEMBERS > SWITCH TO BETA LIST > AUTH? CENTANG HIJAU SEMUA LALU DI 
     KASIH "SHORT-NAME"
